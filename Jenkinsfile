@@ -18,6 +18,7 @@ pipeline
                 {
                  BRANCH_NAME=='dev'
                 }
+             }  
                steps
                {
                 echo "Testing the application"

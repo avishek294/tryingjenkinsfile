@@ -1,6 +1,11 @@
 pipeline
 {
   agent any
+  /* Declaring our own environment variables*/
+  environment
+  {
+       NEW_VERSION='1.3.0'
+  }
         stages
         {
            stage("Build")
@@ -8,6 +13,7 @@ pipeline
              steps
              {
               echo "Building the application"
+               echo "Version is ${NEW_VERSION}"
              }
            }
             stage("Test")

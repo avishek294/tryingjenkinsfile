@@ -16,6 +16,7 @@ pipeline
              {
                expression
                 {
+                  /* Run the ortion in steps only if branch name is 'dev' else skip */
                  BRANCH_NAME=='dev'
                 }
              }  

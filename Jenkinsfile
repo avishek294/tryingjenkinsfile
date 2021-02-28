@@ -1,6 +1,6 @@
 pipeline
 {
-        agent any
+  agent any
         stages
         {
            stage("Build")
@@ -25,5 +25,12 @@ pipeline
              }
            }
         
+        }
+    post 
+        { 
+        always 
+          { 
+            echo 'I will always say Hello again!'
+          }
         }
 }

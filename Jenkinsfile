@@ -14,8 +14,12 @@ pipeline
            {  
              when
              {
-               BRANCH_NAME=='dev'
-             }
+               expression
+               {
+                {
+                 BRANCH_NAME=='dev'
+                }
+               }
              steps
              {
               echo "Testing the application"

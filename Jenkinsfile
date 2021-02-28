@@ -5,6 +5,7 @@ pipeline
   environment
   {
        NEW_VERSION='1.3.0'
+       SERVER_CREDENTIALS=credentials('testuser')  
   }
         stages
         {
@@ -36,6 +37,7 @@ pipeline
              steps
              {
               echo "Deploying the application"
+              echo "Deploying using ${SERVER_CREDENTIALS}"
              }
            }
         

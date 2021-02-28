@@ -15,15 +15,13 @@ pipeline
              when
              {
                expression
-               {
                 {
                  BRANCH_NAME=='dev'
                 }
+               steps
+               {
+                echo "Testing the application"
                }
-             steps
-             {
-              echo "Testing the application"
-             }
            }
             stage("Deploying")
            {           

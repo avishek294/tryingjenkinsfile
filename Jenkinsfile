@@ -7,7 +7,21 @@ pipeline
            {           
              steps
              {
-              echo "Inside Build"
+              echo "Building the application"
+             }
+           }
+            stage("Test")
+           {           
+             steps
+             {
+              echo "Testing the application"
+             }
+           }
+            stage("Deploying")
+           {           
+             steps
+             {
+              echo "Deploying the application"
              }
            }
         
